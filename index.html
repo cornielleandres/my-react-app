@@ -11,47 +11,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
   </head>
   <body>
-    <div id="wrapper">
+    <div id="app">
     </div>
     <hr>
     <h6 class="content-info">Carlos © 2018. All Rights Reserved</h6>
-    
-    
-    
-          <script type="text/babel">
-        const JSX = (
-          <div>
-            <h1>Hello World</h1>
-            <p>Lets render this to the DOM</p>
-          </div>
-        );
-        const myTeam = {
-          center: <li>Benzo Walli</li>,
-          powerForward: <li>Rasha Loa</li>,
-          smallForward: <li>Tayshaun Dasmoto</li>,
-          shootingGuard: <li>Colmar Cumberbatch</li>,
-          pointGuard: <li>Femi Billon</li>
-        };
-        
-        
-        
-        class MyComponentClass extends React.Component {
-  render() {
-    return <h1>Hello worldz!</h1>;
-  }
-};
-
-ReactDOM.render(
-  <MyComponentClass />,
-  document.getElementById('wrapper')
-);
-        
-        
-        
-        
-      </script>
-    
-    
-    
+    <script type="text/babel">
+      class Title extends React.Component {
+        render() {
+          return <h1>My App in React!</h1>;
+        }
+      };
+      
+      ReactDOM.render(<Title />, document.getElementById('app'));
+    </script>
   </body>
 </html>
