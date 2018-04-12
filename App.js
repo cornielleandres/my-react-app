@@ -1,8 +1,9 @@
 class App extends React.Component {
+  const btn = window.Button;
   render() {
     return (
-      <h1>Button there</h1>
-      <Button />
+      <h1>try</h1>
+      {btn}
     );
   }
 };
