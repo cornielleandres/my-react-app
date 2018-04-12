@@ -5,9 +5,9 @@ class App extends React.Component {
   render() {
     return (
       <h1>!My React App!</h1>
-      <Button />
+      <Button buttonText={text} />
     );
   }
 };
 
-ReactDOM.render(<App buttontext={text} />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
